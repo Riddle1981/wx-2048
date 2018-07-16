@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="game">
+  <view class='info'>
+    <!-- <view class='userName'>{{userInfo.nickName}}</view> -->
+    <view class='userName' >
+      <p>2048</p>
+      <view class="again" catch:touchend="init">try again</view>
+    </view>
+    <view class="scoreInfo">
+       <view class='score'>
+          <view>score</view>
+          <view class="record">{{myScore}}</view>
+        </view>
+        <view class='bestScore score'>
+          <view>best</view>
+          <view class="record">{{bestScore}}</view>
+        </view>
+      </view>
+    </view>
+  <view class="content" catch:touchstart="start" catch:touchend="end">
+    <view class="cover" wx:if="{{over}}">
+      <p>game over!</p>
+      <p class="next" catch:touchend="init">try again</p>
+    </view>
+    <view class="box" wx:key='item.num'  wx:for="{{boxArr}}" style="{{color[item.num - 1]}}" >
+      {{item.num2}}
+    </view> 
+  </view>
+</view>

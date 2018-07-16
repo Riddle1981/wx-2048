@@ -1,0 +1,120 @@
+/**index.wxss**/
+page{
+  background: rgba(250, 248, 240, 1);
+  width: 100vw;
+  height: 100vh;
+}
+button{
+  width: 350px;
+  height: 50px;
+}
+.game{
+  position: relative;
+}
+.info{
+  height: 240rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.userName{
+  font-size: 46rpx;
+  font-weight: 700;
+  width: 40%;
+  height: 240rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.again{
+  font-size: 32årpx;
+  border-radius: 10rpx;
+  width: 220rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  vertical-align: middle;
+  color: rgba(250, 248, 240, 1);
+  margin-top: 4rpx;
+  text-align: center;
+  background: rgba(121, 114, 103,0.5);
+}
+.scoreInfo{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+}
+.score{
+  background: rgba(184, 173, 161, 1); 
+  text-align: center;
+  color: rgba(236, 228, 219, 1);
+  width: 180rpx;
+  height: 110rpx;
+  border-radius: 10rpx;
+}
+.record{
+  color: #ffffff;
+}
+.content{
+  width: 640rpx;
+  position: relative;
+  border-radius: 10rpx;
+  height: 640rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 80rpx;
+  background: rgb(202, 193, 181);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.box{
+  border-radius: 10rpx;
+  width: 140rpx;
+  height: 140rpx;
+  background: rgba(184, 173, 161, 1);
+  color: #ffffff;
+  line-height: 140rpx;
+  text-align: center;
+  font-weight: 700;
+  font-size: 48rpx;
+  animation: all 1s linear
+}
+.graw{
+  color: rgb(121, 114, 103);
+}
+.light{
+  
+}
+.cover{
+  width: 640rpx;
+  border-radius: 10rpx;
+  height: 640rpx;
+  left: 50%;
+  font-size: 72rpx;
+  color: rgba(236, 228, 219, 1);
+  transform: translateX(-50%);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  background:rgba(121, 114, 103,0.8);
+  text-align:center;
+}
+.next{
+  border-radius: 10rpx;
+  width: 300rpx;
+  height: 100rpx;
+  font-size: 48rpx;
+  line-height: 100rpx;
+  color: rgba(121, 114, 103,0.8);
+  margin-top: 20rpx;
+  vertical-align: middle;
+  text-align: center;
+  background: rgba(236, 225, 212, 0.7);
+}
